@@ -37,7 +37,7 @@ export default function SkillsSection() {
 	return (
 		<section style={{ 
 			padding: '64px 16px', 
-			backgroundColor: '#f9fafb' 
+			backgroundColor: 'var(--bg-primary)' 
 		}}>
 			<div style={{ 
 				maxWidth: '1152px', 
@@ -51,13 +51,13 @@ export default function SkillsSection() {
 						fontSize: '30px', 
 						fontWeight: 'bold', 
 						marginBottom: '16px', 
-						color: '#1f2937' 
+						color: 'var(--text-primary)' 
 					}}>
 						사용 기술
 					</h2>
 					<p style={{ 
 						fontSize: '18px', 
-						color: '#4b5563', 
+						color: 'var(--text-secondary)', 
 						maxWidth: '672px', 
 						margin: '0 auto' 
 					}}>

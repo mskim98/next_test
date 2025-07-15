@@ -7,11 +7,11 @@ interface SkillCardProps {
 export default function SkillCard({ icon, title, description }: SkillCardProps) {
 	return (
 		<div style={{ 
-			backgroundColor: 'white', 
+			backgroundColor: 'var(--bg-secondary)', 
 			padding: '24px', 
-			border: '1px solid #e5e7eb', 
+			border: '1px solid var(--border-color)', 
 			borderRadius: '16px', 
-			boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+			boxShadow: '0 25px 50px -12px var(--shadow-color)',
 			transition: 'all 0.3s ease'
 		}}>
 			<div style={{ textAlign: 'center' }}>
@@ -33,11 +33,11 @@ export default function SkillCard({ icon, title, description }: SkillCardProps) 
 				<h3 style={{ 
 					fontSize: '20px', 
 					fontWeight: 'bold', 
-					color: '#1f2937', 
+					color: 'var(--text-primary)', 
 					marginBottom: '12px' 
 				}}>{title}</h3>
 				<p style={{ 
-					color: '#4b5563', 
+					color: 'var(--text-secondary)', 
 					fontSize: '14px', 
 					lineHeight: '1.6' 
 				}}>{description}</p>

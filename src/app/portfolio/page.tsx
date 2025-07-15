@@ -8,7 +8,7 @@ export default function Portfolio() {
 	return (
 		<div style={{ 
 			minHeight: '100vh', 
-			backgroundColor: '#f9fafb' 
+			backgroundColor: 'var(--bg-primary)' 
 		}}>
 			<Navigation />
 			<PortfolioHeader />
