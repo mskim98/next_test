@@ -4,7 +4,11 @@ import { useReducer } from "react";
 
 const initialState: { text: string; done: boolean }[] = [];
 
-function reducer(state: typeof initialState, action: any) {
+type Action =
+  | { type: "ADD"; text: string }
+  | { type: "TOGGLE"; index: number };
+
+function reducer(state: typeof initialState, action: Action) {
   switch (action.type) {
     case "ADD":
       return [...state, { text: action.text, done: false }];
